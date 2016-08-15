@@ -14,10 +14,10 @@ apply plugin: "groovy"
 apply plugin: "idea"
 apply plugin: "maven"
 group ='org.hibernate.gradle.tools'
-version = '1.2.3'
+version = '1.2.3-oracle11'
 
 repositories {
-  jcenter()
+    mavenLocal()
 }
 
 dependencies {
@@ -27,10 +27,10 @@ dependencies {
 
 pluginBundle {
 
-  website = 'https://github.com/institut-de-genomique/'
-  vcsUrl = 'https://github.com/institut-de-genomique/hibernatetools-gradle-plugin'
+  website = 'https://github.com/lekant/'
+  vcsUrl = 'https://github.com/lekant/hibernatetools-gradle-plugin'
 
-  description = 'Hibernate tools plugin to reverse engineering database.'
+  description = 'Hibernate tools plugin to reverse engineering database. Forked from https://github.com/institut-de-genomique/hibernatetools-gradle-plugin'
 
 
   plugins {
